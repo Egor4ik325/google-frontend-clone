@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header {
+    min-height: 48px;
+    padding-right: 20px;
+
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* .link-bar {
+} */
+
+.link-bar a {
+    font-size: 10pt;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.link-bar a:hover {
+    text-decoration: underline;
+}
+
+.sign-in {
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    /* border: 0px solid transparent; */
+    border-radius: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    color: white;
+    background-color: rgb(73, 128, 245);
+    font-weight: bold;
+}
+
+.sign-in:hover {
+    box-shadow: 0px 1px 0px rgb(214, 214, 214);
+}
+
+.content {
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    max-height: 90px;
+}
+
+.logo-subscript {
+    text-align: right;
+    transform: translateY(-20px);
+    color: blue;
+}
+
+.search-bar {
+    max-width: 600px;
+    width: 90%;
+    height: 45px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid #dfdfdf;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-bar:hover {
+    border: none;
+    box-shadow: 0px 0px 6px 1px rgb(214, 214, 214);
+}
+
+.search-icon {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.search-image {
+    pointer-events: none;
+    user-select: none;
+    filter: contrast(0%) opacity(60%);
+}
+
+.camera-icon {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.camera-image {
+    pointer-events: none;
+    user-select: none;
+    filter: contrast(0%);
+}
+
+.search-icon-blue {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.search-image-blue {
+    pointer-events: none;
+    user-select: none;
+    filter: brightness(0) saturate(100%);
+    filter: invert(100%) sepia(100%) saturate(1000%) brightness(70%) hue-rotate(130deg)
+}
+
+.search-field {
+    width: 100%;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.search-input {
+    width: 100%;
+    height: 34px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+
+    margin-top: 4px;
+    color: black;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    min-height: 36px;
+    margin: 10px;
+    padding: 0 16px 0;
+    border: 0 solid black;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: inset 0px 0px 0px 1px #e0e0e0,
+    0px 0px 1px 1px #f0f0f0aa;
+}
+
+.fill-gap {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+
+    border-top: 1px solid #dfdfdf;
+    background-color: rgb(238, 238, 238);
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media all and (min-width: 1200px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.left-half {
+    width: 400px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-half {
+    width: 250px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
