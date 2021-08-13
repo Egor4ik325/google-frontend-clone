@@ -1,1 +1,1 @@
-Just a small clone took from cs50.
+Just a small clone Google Search webpage clone (inspired by CS50).
